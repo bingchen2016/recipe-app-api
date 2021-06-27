@@ -22,7 +22,7 @@ services:
 
   db:
     image: postgres:10-alpine
-    command: sh -c "while !</dev/tcp/db/5432; do sleep 1; done;"
+    #command: sh -c "while !</dev/tcp/db/5432; do sleep 1; done;"
     environment:
       - POSTGRES_DB=app
       - POSTGRES_USER=postgres
